@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.editor-container {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.CodeMirror {
+    border: 1px solid #ddd;
+    height: 250px;
+    width: 100%; /* Make the editor width 100% of its container */
+    font-family: monospace;
+    font-size: 15px;
+}
+
+button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+pre {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-top: 15px;
+}
+
+/* Base styles for the CodeMirror editor */
+
+
+/* Highlighting styles */
+.cm-variable {
+    color: #007acc; /* Blue for variables */
+}
+
+.cm-keyword {
+    color: #ff0000; /* Red for keywords */
+}
+
+.cm-type {
+    color: #a31515; /* Dark Red for data types */
+}
+
+.cm-function {
+    color: #795e26; /* Brown for built-in functions */
+}
+
+
+/* responsive  */
+/* Base styles for the CodeMirror editor */
+
+/* Container for the editor */
+.editor-container {
+    max-width: 100%; /* Ensure container doesn't exceed viewport width */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 20px; /* Padding around the editor */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Button and output styling */
+button, pre {
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    margin-top: 10px; /* Space above button and output */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .CodeMirror {
+        font-size: 12px; /* Smaller font size on very small screens */
+    }
+
+    .editor-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .CodeMirror {
+        font-size: 13px; /* Medium font size for medium screens */
+    }
+
+    .editor-container {
+        padding: 15px; /* Adjust padding for medium screens */
+    }
+}

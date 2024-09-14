@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeMirror Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+</head>
+<body>
+    <textarea id="codeEditor">public class Test { public static void main(String[] args) { } }</textarea>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
+    <script>
+        CodeMirror.fromTextArea(document.getElementById("codeEditor"), {
+            lineNumbers: true,
+            mode: "text/x-java"
+        });
+    </script>
+</body>
+</html>
