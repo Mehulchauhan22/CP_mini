@@ -11,7 +11,7 @@ instruction:
 if you want to clone the website
 then go to folder then open terminal
 
-> git clone "url"
+> git clone "https://github.com/Mehulchauhan22/CP_mini.git"
 
 if you want to commint the changes then
 
